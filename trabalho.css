@@ -616,3 +616,60 @@ p{ margin:0; }
   .noteStrip{ grid-template-columns: repeat(2,1fr); }
   .modalCols{ grid-template-columns: 1fr; }
 }
+/* ==========================================================================
+   BREAKPOINTS DE RESPONSIVIDADE (CELULAR E COMPUTADOR)
+   ========================================================================== */
+
+/* --- COMPUTADORES E TELAS GRANDES (Acima de 981px) --- */
+@media (min-width: 981px) {
+  /* Mantém o grid padrão e define larguras confortáveis para desktop */
+  body {
+    font-size: 16px;
+  }
+}
+
+/* --- TABLETS E DISPOSITIVOS MÉDIOS (Até 980px) --- */
+@media (max-width: 980px) {
+  .hero { 
+    grid-template-columns: 1fr; 
+    padding-top: 110px;
+  }
+  .nav { 
+    display: none; 
+    position: absolute; 
+    top: 70px; 
+    left: 0; 
+    width: 100%; 
+    padding: 25px 6vw; 
+    background: #090d15; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    border-bottom: 1px solid var(--line);
+  }
+  .nav.open { display: flex; }
+  .menu-btn { display: block; }
+  
+  .timeline { grid-template-columns: repeat(2, 1fr); }
+  .grid2, .grid3 { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+  .contact-form .form-grid { grid-template-columns: 1fr; }
+  .layoutNotes { grid-template-columns: 1fr; }
+  .noteStrip { grid-template-columns: repeat(2, 1fr); }
+  .modalCols { grid-template-columns: 1fr; }
+}
+
+/* --- CELULARES (Até 480px / Telas Pequenas) --- */
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 16px;
+  }
+  .heroTitle {
+    font-size: 32px;
+  }
+  .timeline { 
+    grid-template-columns: 1fr; 
+  }
+  .noteStrip { 
+    grid-template-columns: 1fr; 
+  }
+}
