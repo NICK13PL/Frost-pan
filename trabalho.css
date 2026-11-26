@@ -615,12 +615,8 @@ p{ margin:0; }
   .layoutNotes{ grid-template-columns: 1fr; }
   .noteStrip{ grid-template-columns: repeat(2,1fr); }
   .modalCols{ grid-template-columns: 1fr; }
-}
-/* ==========================================================================
-   BREAKPOINTS DE RESPONSIVIDADE (CELULAR E COMPUTADOR)
-   ========================================================================== */
 
-/* --- COMPUTADORES E TELAS GRANDES (Acima de 981px) --- */
+
 @media (min-width: 981px) {
   /* Mantém o grid padrão e define larguras confortáveis para desktop */
   body {
